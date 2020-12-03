@@ -1,0 +1,9 @@
+<h4>
+  App component</h4>
+
+<nav *ngIf="isLoggedIn()">
+  <a [routerLink]="['/']" style="margin-left: 30px;">Home</a>
+  <a [routerLink]="['/logout']" style="margin-left: 30px;">Logout</a>
+</nav>
+
+<router-outlet></router-outlet>
